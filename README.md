@@ -10,7 +10,7 @@
 
 ## Dữ liệu
 
-File `spreadsheet.xlsx` chứa dữ liệu giá nhà với các đặc trưng đầu vào và cột mục tiêu `gia`.
+File `spreadsheet.xlsx` chứa dữ liệu giá nhà với các đặc trưng đầu vào và cột mục tiêu `gia` (giá).
 
 ## Chạy trên máy (local)
 
