@@ -1,7 +1,5 @@
 # Dự đoán giá nhà - Overfitting và cách khắc phục
 
-Bài tập mở rộng từ mô hình Linear Regression dự đoán giá nhà, tập trung vào hiện tượng **overfitting** và các kỹ thuật để phát hiện / khắc phục nó.
-
 ## Nội dung script
 
 1. **Tạo overfitting**: sinh đặc trưng đa thức (Polynomial Features) bậc 3 trên tập dữ liệu nhỏ, khiến số đặc trưng vượt xa số mẫu train => mô hình Linear Regression học thuộc lòng tập train (R2 train = 1.0000) nhưng dự đoán kém trên tập test.
@@ -24,5 +22,5 @@ python overfitting.py
 ## Chạy trên GitHub Actions
 
 1. Fork repo này.
-2. Vào tab **Actions** > chọn workflow **Run House Price Script** > **Run workflow**.
+2. Vào tab **Actions** > **Run House Price Script** > **Run workflow**.
 3. Sau khi chạy xong, tải kết quả trong phần **Artifacts** của lần chạy đó.
