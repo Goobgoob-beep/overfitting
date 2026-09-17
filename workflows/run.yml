@@ -1,0 +1,28 @@
+name: Run House Price Script
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pandas scikit-learn openpyxl
+
+      - name: Run script
+        run: python overfitting.py | tee ket_qua.txt
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: ket-qua
+          path: ket_qua.txt
